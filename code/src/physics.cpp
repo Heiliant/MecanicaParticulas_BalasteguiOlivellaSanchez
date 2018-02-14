@@ -1,6 +1,11 @@
 #include <imgui\imgui.h>
 #include <imgui\imgui_impl_sdl_gl3.h>
 
+namespace LilSpheres {
+	extern const int maxParticles;
+	extern void updateParticles(int startIdx, int count, float* array_data);
+}
+
 bool show_test_window = false;
 void GUI() {
 	bool show = true;
